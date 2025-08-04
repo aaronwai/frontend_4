@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.0/css/all.min.css"
+      integrity="sha512-DxV+EoADOkOygM4IR9yXP8Sb2qwgidEmeqAEmDKIOfPRQZOWbXCzLC6vjbZyy0vPisbH2SyW27+ddLVCN+OMzQ=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="./css/js-shopping.css" />
+    <title>js-shopping</title>
+  </head>
+  <body>
+    <div class="container">
+      <!-- this is a comment -->
+      <a href="http://www.facebook.com">Facebook</a>
+      <header>
+        <img src="./img/logo.svg" alt="" />
+        <h1>JS Shopping List</h1>
+      </header>
+      <form id="item-form">
+        <div class="form-control">
+          <input
+            type="text"
+            class="form-input"
+            id="item-input"
+            name="item"
+            placeholder="Enter Item"
+          />
+        </div>
+        <div class="form-control">
+          <button type="submit" class="btn">
+            <i class="fa-solid fa-plus"></i>Add Item
+          </button>
+        </div>
+      </form>
+      <div class="filter">
+        <input
+          type="text"
+          class="form-input-filter"
+          id="filter"
+          placeholder="Filter Items"
+        />
+      </div>
+      <ul id="item-list" class="items">
+        <li class="item">
+          Apple
+          <button class="remove-item btn-link text-red">
+            <i class="fa-solid fa-xmark"></i>
+          </button>
+        </li>
+        <li class="item">
+          Orange
+          <button class="remove-item btn-link text-red">
+            <i class="fa-solid fa-xmark"></i>
+          </button>
+        </li>
+        <li class="item">
+          Banana
+          <button class="remove-item btn-link text-red">
+            <i class="fa-solid fa-xmark"></i>
+          </button>
+        </li>
+        <li class="item">
+          Mango
+          <button class="remove-item btn-link text-red">
+            <i class="fa-solid fa-xmark"></i>
+          </button>
+        </li>
+      </ul>
+      <button id="clear" class="btn-clear">Clear All</button>
+    </div>
+    <script src="./js/js-shopping3.js"></script>
+  </body>
+</html>
